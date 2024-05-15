@@ -1,10 +1,4 @@
-﻿using Core.Domain;
-using Infrastructure.CommandHandlers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Infrastructure.CommandHandlers;
 
 namespace Infrastructure.Repositories
 {

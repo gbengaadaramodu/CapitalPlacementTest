@@ -1,4 +1,8 @@
+using Infrastructure;
 using Microsoft.Azure.Cosmos;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,7 +39,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddHttpContextAccessor();
-//NativeInjectorBootStrapper.RegisterServices(builder.Services);
+NativeInjectorBootStrapper.RegisterServices(builder.Services);
 
 var app = builder.Build();
 
