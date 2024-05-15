@@ -1,3 +1,4 @@
+using Infrastructure;
 using Microsoft.Azure.Cosmos;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -35,7 +36,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddHttpContextAccessor();
-
+NativeInjectorBootStrapper.RegisterServices(builder.Services);
 
 var app = builder.Build();
 
