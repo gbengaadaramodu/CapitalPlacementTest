@@ -31,7 +31,7 @@ namespace Infrastructure.QueryHandlers
         {
             var resp = false;
             try
-            {
+            { 
                 var candidate = new Candidate
                 {
                    Id = Guid.NewGuid().ToString(),
@@ -129,7 +129,8 @@ namespace Infrastructure.QueryHandlers
                 }
 
             }
-            catch (Exception ex) { 
+            catch (Exception ex)
+            { 
                 //logging
             }
 
